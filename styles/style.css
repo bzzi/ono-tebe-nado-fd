@@ -60,7 +60,7 @@ body {
 .cover {
   position: relative;
   padding: 159px 50px 50px;
-  background: center / cover no-repeat url(../img/bkg_cover.jpg);
+  background: center / cover no-repeat url(../images/cover.jpg);
   min-height: 757px;
   color: #fff;
 }
@@ -195,15 +195,15 @@ body {
 }
 
 .lot_bg-film {
-  background-image: url("../img/photo1png.png");
+  background-image: url("../images/card-lot-01.jpg");
   background-color: #666;
 }
 .lot_bg-book {
-  background-image: url("../img/photo2.jpg");
+  background-image: url("../images/card-lot-02.jpg");
   background-color: #595959;
 }
 .lot_bg-picture {
-  background-image: url("../img/photo3.png");
+  background-image: url("../images/card-lot-03.jpg");
   background-color: #4d4d4d;
 }
 
@@ -241,7 +241,6 @@ body {
   max-width: 160px;
   height: 114px;
   margin-top: 8px;
-  filter: brightness(0) invert(1);
 }
 .about__column {
   display: flex;
