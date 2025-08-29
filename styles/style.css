@@ -74,7 +74,7 @@ body {
   letter-spacing: 30px;
   text-transform: uppercase;
 }
-.сover_title-word {
+.cover__title-word {
   display: block;
 }
 .word_center {
@@ -88,13 +88,9 @@ body {
 
 .cover__description {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 78px;
   position: relative;
-}
-.cover__description {
-  display: flex;
   justify-content: space-between;
   padding-top: 99px;
   font-family: Raleway, sans-serif;
@@ -173,8 +169,10 @@ body {
   color: #fff;
   background: center / cover no-repeat;
 }
-.lot__text,
-.lot__title {
+.cover__content,
+.lot__title,
+.lot__text {
+  position: relative;
   z-index: 1;
 }
 
