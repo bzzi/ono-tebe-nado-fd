@@ -1,7 +1,7 @@
-/* Reset and base styles  */
+/* Reset */
 * {
-  padding: 0px;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
@@ -11,7 +11,14 @@
   box-sizing: border-box;
 }
 
-/* Links */
+/* Base page style */
+body {
+  width: 1100px;
+  margin: 0 auto;
+  font-family: "Raleway", Arial, sans-serif;
+  color: #111;
+  line-height: 1.5;
+}
 
 a,
 a:visited,

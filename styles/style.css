@@ -19,6 +19,11 @@ body {
   text-transform: lowercase;
   letter-spacing: 1.4px;
 }
+.header__menu a,
+.contacts a,
+.footer__menu-link {
+  color: inherit;
+}
 .header__menu ul {
   display: flex;
   gap: 20px;
@@ -30,19 +35,18 @@ body {
   padding-right: 10px;
   list-style: circle;
 }
-.header__menu-link_active,
-.footer__menu-link_active {
-  text-decoration: none !important;
+.header__links-list-item .header__menu-link_active,
+.footer__menu-list-item .footer__menu-link_active {
+  text-decoration: none;
 }
 
 .header__logo {
   justify-self: center;
-  width: 148px;
+  width: 136px;
 }
 .header__logo a {
   display: block;
 }
-
 .contacts {
   display: flex;
   flex-direction: column;
@@ -50,6 +54,7 @@ body {
   padding-right: 10px;
   line-height: 24.3px;
   font-size: 18px;
+  font-style: normal;
 }
 .header__contacts {
   justify-self: end;
@@ -67,7 +72,6 @@ body {
 .cover__title {
   display: flex;
   flex-direction: column;
-  font-family: Raleway;
   font-size: 100px;
   font-weight: 700;
   line-height: 132%;
@@ -93,12 +97,10 @@ body {
   position: relative;
   justify-content: space-between;
   padding-top: 99px;
-  font-family: Raleway, sans-serif;
   font-size: 22px;
   line-height: 28px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #fff;
   word-spacing: 20px;
 }
 .cover__description * {
@@ -111,8 +113,13 @@ body {
   border: 1px solid #fff;
   background: transparent;
   cursor: pointer;
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 28px;
 }
-
+.overlay {
+  position: relative;
+}
 .overlay:before {
   content: "";
   display: block;
@@ -131,7 +138,6 @@ body {
   padding-left: 41px;
   padding-bottom: 20px;
   color: #000;
-  font-family: Raleway;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
@@ -177,13 +183,11 @@ body {
 }
 
 .lot__text {
-  font-family: Raleway;
   font-size: 20.22px;
   font-weight: 400;
   line-height: 24px;
 }
 .lot__title {
-  font-family: Raleway;
   font-size: 22px;
   font-weight: 700;
   line-height: 26.4px;
@@ -207,7 +211,6 @@ body {
 
 .readmore {
   display: inline-block;
-  font-family: Raleway;
   font-size: 20.22px;
   font-weight: 400;
   padding: 30px 40px;
@@ -251,7 +254,6 @@ body {
 }
 .about__title {
   color: #000;
-  font-family: Raleway;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
@@ -260,7 +262,6 @@ body {
 .about__text p {
   margin-bottom: 24px;
   color: #000;
-  font-family: Raleway;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
@@ -306,4 +307,9 @@ body {
   border: 1px solid #000;
   border-radius: 50%;
   background: center / 50% no-repeat;
+}
+.footer__social-icon img {
+  width: 48px;
+  height: 48px;
+  display: block;
 }
