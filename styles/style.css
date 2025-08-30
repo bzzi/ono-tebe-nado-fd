@@ -95,6 +95,7 @@
   position: relative;
   padding: 159px 50px 50px;
   background: url(../images/cover.jpg);
+  background-size: cover;
   min-height: 757px;
 }
 .cover__title {
@@ -104,14 +105,16 @@
 }
 .cover__title-word {
   display: block;
+  margin-right: -25px;
+}
+.cover__title-word:first-child {
+  margin-right: 0;
 }
 .word_center {
   text-align: center;
-  margin-right: -25px;
 }
 .word_right {
   text-align: right;
-  margin-right: -25px;
 }
 
 .cover__description {
